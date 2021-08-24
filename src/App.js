@@ -23,7 +23,7 @@ function App() {
         answerOptions: quizQuestions[counter - 1].answers
       });
     }
-  }, [counter]);
+  }, [counter, information]);
 
   useEffect(() => {
     if (Object.entries(answers).length === 5) console.log("Completou carai!");
